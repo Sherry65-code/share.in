@@ -1,18 +1,24 @@
 window.addEventListener('load',()=>{
-    setTimeout(hide_s , 3000);
+    setTimeout(hide_s , 500);
 });
 function hide_s()
 {
+    x = 0;
     document.getElementById('splash').style.transform = "translate(-100%)";
     while (true){
     pass = prompt("Type Password");
     if (pass == "idk")
     {
-        alert("Correct Password");
         break;
     }
     else
     {
+        if (x > 5)
+        {
+            alert("You have entered wrong password 5 times. This window will be closed now.");
+            window.close();
+        }
+        x += 1;
         alert("Wrong Password");
     }}
 }
