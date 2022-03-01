@@ -4,7 +4,17 @@ window.addEventListener('load',()=>{
 function hide_s()
 {
     document.getElementById('splash').style.transform = "translate(-100%)";
-
+    while (true){
+    pass = prompt("Type Password");
+    if (pass == "idk")
+    {
+        alert("Correct Password");
+        break;
+    }
+    else
+    {
+        alert("Wrong Password");
+    }}
 }
 function pop_frame(pop_head, pop_links)
 {
@@ -13,7 +23,7 @@ document.getElementById('popup').innerHTML = `
 <span class="ph">
     
 `+pop_head+` </span> <button class="close" onclick="close_popup()"></button>
-<iframe src="`+pop_links+`" frameborder="0"></iframe>
+<iframe width="560" height="315" src="`+pop_links+`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 `;
 // document.querySelector('.ph').style = "visibility: visible";
