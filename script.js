@@ -38,7 +38,11 @@ document.getElementById('popup').style.transform = "scale(1)";
 }
 function close_popup()
 {
-    document.getElementById('popup').style.transform = "scale(0)";    
+    document.getElementById('popup').style.transform = "translate(100%)";    
     // document.getElementById('popup').style.visibility = "hidden";
 
+}
+function byebye()
+{
+    window.close();
 }
