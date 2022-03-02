@@ -47,6 +47,7 @@ body{
     color: aliceblue;
     font-family: monospace;
     outline: none;
+    overflow: hidden;
 }
 ::-webkit-scrollbar{
     width: 1px;
