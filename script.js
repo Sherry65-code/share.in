@@ -1,26 +1,21 @@
-window.addEventListener('load',()=>{
-    setTimeout(hide_s , 500);
-});
+function click_login(){
+    hide_s();
+}
 function hide_s()
 {
     x = 0;
     document.getElementById('splash').style.transform = "translate(-100%)";
     while (true){
     pass = prompt("Type Password");
-    if (pass == "idk")
+    if (pass == "gk")
     {
         break;
     }
     else
     {
-        if (x > 5)
-        {
-            alert("You have entered wrong password 5 times. This window will be closed now.");
-            window.close();
-        }
-        x += 1;
         alert("Wrong Password");
-    }}
+    }
+}
 }
 function pop_frame(pop_head, pop_links)
 {
@@ -38,7 +33,7 @@ document.getElementById('popup').style.transform = "scale(1)";
 }
 function close_popup()
 {
-    document.getElementById('popup').style.transform = "translate(100%)";    
+    document.getElementById('popup').style.transform = "scale(0)";    
     // document.getElementById('popup').style.visibility = "hidden";
 
 }
